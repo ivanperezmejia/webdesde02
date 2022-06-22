@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body style="background-color:powderblue;">
+
+    <h1>My First Heading</h1>
+    <p title="I'm a tooltip">My first paragraph.</p>
+    <p>My second <br> paragraph.</p>
+
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+
+    <p><a href="#H1">Jump to 'This is Heading 1'</a></p>
+
+    <p>Move your mouse over the paragraphs below to see the effect:</p>
+    <p title='John "ShotGun" Nelson'>John with double quotes</p>
+    <p title="John 'ShotGun' Nelson">John with single quotes</p>
+    <p title="I'm a tooltip">This is a paragraph.</p>
+
+    <p style="color:red;">This is a red paragraph.</p>
+
+    <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+    <p><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools on another page!</a></p>
+    
+    <p>This is an image with a link, click on it:
+        <a href="https://www.w3schools.com/" target="_blank">
+            <img src="../w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+        </a>
+    </p>
+    
+    <p>Click to open the mail app and send an email: 
+        <a href="mailto:someone@example.com">Send email</a>
+    </p>
+
+
+    <img src="../w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+    <img src="https://www.w3schools.com/images/img_girl.jpg" alt="Undisplayable" width="52" height="71">
+
+    <h1 id="H1">This is heading 1</h1>
+    <p>This is some text.</p>
+    <hr>
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+    <hr>
+
+    <p style="font-family:verdana;text-align:center;">This is a centered paragraph.</p>
+
+    <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+
+    <pre style="background-color: green;font-family:verdana;font-size:200%;">
+        My Bonnie lies over the ocean.
+      
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.
+    </pre>
+
+    <h1 style="background-color:blue;">This is a heading</h1>
+    <p style="background-color:tomato;">This is a paragraph.</p>
+
+    <p><i>This text is italic</i>
+        <small>This is some smaller text.</small>
+    </p>
+
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+
+    <p>This is <sub>subscripted</sub> and <sup>superscripted</sup> text.</p>
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization,
+    WWF works in 100 countries and is supported by
+    1.2 million members in the United States and
+    close to 5 million globally.
+    </blockquote>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <!--- This is a comment and will not show up -->
+
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border: 10px solid Tomato;">Hello World</h1>
+
+
+    <button><a href="https://www.google.com/">google</a></button>
+
+    
+    <hr>
+    <p>Click on the computer to go to file Prueba 2, the phone to go to apple.com,
+        and the coffe to go to starbucks.com. This is called an Image Map</p>
+    <img src="../workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="Prueba 2.html" target="_blank">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.apple.com/iphone" target="_blank">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.starbucks.com" target="_blank">
+    </map>  
+
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of <span style="color:red; font:bold">England</span>. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div> 
+
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script> 
+
+
+</body>
+</html>
