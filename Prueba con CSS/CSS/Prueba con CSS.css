@@ -1,0 +1,76 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid purple;
+}
+
+a{
+    font-size: 300%;
+}
+
+a:link {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+}
+
+td:hover{
+    background-color: crimson;
+}
+
+.city { /*This is a class, you will call it by typing clss="city" and the elements
+        inside the section will follow the instructions of the class. A class can
+        be applied to any HTML element*/
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main{
+    font-weight: 900;
+    color: brown;
+}
+
+#colorHeader{
+    color: aqua;
+}
+/*The # means an id. It works like a class but can only be used by one element not multiple*/

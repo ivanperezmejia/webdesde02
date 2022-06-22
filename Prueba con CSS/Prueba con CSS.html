@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba con CSS</title>
+    <link rel="stylesheet" href="CSS/Prueba con CSS.css">
+</head>
+<body>
+    <h1>ABCD</h1>
+    <p>This is a prueba</p>
+    <p style = "font-family:verdana;text-align:center;">djdksl</p>
+    <p style = "padding: 30px;">lslslsl</p>
+    <!--- Lo que esta adentro de las "" en style, es lo que iria en el css doc -->
+
+    <button><a href="https://www.google.com/">Google</a></button>
+
+    <table style="width:50%; border-spacing: 30px;">
+        <caption style = "font-family: verdana; font-size: 200%;"><b>Data</b></caption>
+        <tr>
+            <th>Persona</th>
+            <th>Pais</th>
+            <th>Telefono</th>
+        </tr>
+        <tr>
+            <td>Ivan</td>
+            <td>El Salvador</td>
+            <td>78515635</td>
+        </tr>
+        <tr>
+            <td>Persona 1</td>
+            <td>EEUU</td>
+            <td>7187089991</td>
+        </tr>
+
+        <tr>
+            <td>Persona 2</td>
+            <td>Guatemala</td>
+            <td>74546986</td>
+        </tr>
+
+    </table>
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+      
+    <div class="city main">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <script>
+        var contador=0;
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+            contador++;
+        }
+        console.log(i);
+    </script>
+
+    <h1 id="colorHeader">Hola</h1>
+
+
+</body>
+</html>

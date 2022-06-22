@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Prueba 2</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!--- This is supposed to show the favicon but is not working for some reason-->
+    <style>
+        a:link, a:visited {
+          background-color: #f44336;
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border: 2px solid blue;
+        }
+        
+        a:hover, a:active {
+          background-color: red;
+        }
+
+        body{
+          background-image: url('../workplace.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+        }
+        </style>
+</head>
+<body>
+    
+    <p>Hola</p>
+
+    <button><a href="https://www.w3schools.com/html/">Hola</a>
+    </button>
+
+    <a href="https://www.w3schools.com/html/" target="_blank">Hola 2</a>
+    <a href="https://www.w3schools.com/html/" target="_blank">Hola 3</a>
+
+
+    <button id="boton">Enviar</button>
+
+    <script>
+        var boton = document.getElementById("boton");
+        var contador = 0;
+        boton.addEventListener("click", mostrarMensaje);
+        function mostrarMensaje(){
+            contador++;
+            console.log("Hola Mundo" + contador);
+        }
+    </script>
+
+</body>
+</html>
