@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    background-color: #666;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    /*height:800px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    /*height: 800px; /* only for demonstration, should be removed */
+    height: auto;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .botones{
+      background-color: Black;
+      color: white;
+      padding: 15px 25px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border: none;
+  }
+  .botones:hover{
+    background-color: red;
+    font-weight: 900;
+  }
+  
+  .botonmenu{
+    background-color: transparent;
+    color: black;
+    width: 100px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+  }
+  .botonmenu:hover{
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  
+  .image{
+    vertical-align: middle;
+  }
+  
+  .contenedor{
+    display: flex;
+    justify-content: center;
+  }

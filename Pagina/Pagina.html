@@ -4,96 +4,7 @@
 <title>Catalogo de Ciudades</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  background-color: #666;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  padding: 0;
-  margin: 0;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  /*height:800px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  /*height: 800px; /* only for demonstration, should be removed */
-  height: auto;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 5px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.botones{
-    background-color: Black;
-    color: white;
-    padding: 15px 25px;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-}
-.botones:hover{
-  background-color: red;
-  font-weight: 900;
-}
-
-.botonmenu{
-  background-color: transparent;
-  color: black;
-  width: 100px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  border: none;
-}
-.botonmenu:hover{
-  font-weight: 900;
-  text-decoration: underline;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -102,17 +13,18 @@ footer {
 
 <nav>
 <ul>
-    <li><button type = "button" onclick="funcion(0)" class="botonmenu botonmenu:hover">Menu</button></li>
+    <li><button id="botonMenu" type = "button" class="botonmenu botonmenu:hover" value="0">Menu</button></li>
     <hr>
-    <li><button type = "button" onclick="funcion(1)" class="botones botones:hover">Londres</button></li>
-    <li><button type = "button" onclick="funcion(2)" class="botones botones:hover">Paris</button></li>
-    <li><button type = "button" onclick="funcion(3)" class="botones botones:hover">Tokyo</button></li>
+    <li><button id="botonLondres" type = "button" class="botones botones:hover" value="1">Londres</button></li>
+    <li><button id="botonParis" type = "button" class="botones botones:hover" value="2">Paris</button></li>
+    <li><button id="botonTokyo" type = "button" class="botones botones:hover" value="3">Tokyo</button></li>
 </ul>
 </nav>
 
 <article>
     <h1 id = "titulo">De que ciudad quieres obtener informacion?</h1>
     <p id = "parrafo">Selecciona un pais en el menu</p>
+    <br>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex nibh, condimentum id sem et,
         imperdiet convallis lacus. Nam urna mauris, aliquam a dui et, vulputate bibendum dolor. Etiam 
@@ -132,34 +44,16 @@ footer {
         fringilla. Sed at ex et nibh luctus volutpat. In hac habitasse platea dictumst. Praesent eget 
         dolor odio. Duis eget dolor vitae mauris iaculis mattis sodales ultricies magna.
     </p>
-    <p><img src="workplace.jpg" alt="Workplace" width="400" height="379" class="center"></p>
+    <br>
+    <hr>
+    <p class ="contenedor"><img src="../workplace.jpg" alt="Workplace" width="400" height="379" class="image"></p>
 
 </article>
-
-<script>
-function funcion(x){
-  let titulo = document.getElementById("titulo");
-  let parrafo = document.getElementById("parrafo");
-    if (x==0){
-      titulo.innerHTML = "De que ciudad quieres obtener informacion?";
-      parrafo.innerHTML = "Selecciona un pais en el menu";
-    }else if (x==1){
-        titulo.innerHTML = "Londres";
-        parrafo.innerHTML = "Informacion de Londres";
-    } else if (x==2){
-        titulo.innerHTML = "Paris";
-        parrafo.innerHTML = "Informacion de Paris";
-    } else if (x==3){
-        titulo.innerHTML = "Tokyo";
-        parrafo.innerHTML = "Informacion de Tokyo";
-    }
-}
-</script>
 
 <footer>
   <p>Adios</p>
   <p>Por Ivan, 2022</p>
 </footer>
-
 </body>
+<script src="functions.js"></script>
 </html>
